@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "news-crawler",
   "version": "1.0.0",
   "description": "news crawler是一个抓取百度头条文章的工具，自动分析文章内容，生成一片新的“热文”",
@@ -24,3 +25,13 @@
     "crawler": "^1.2.0"
   }
 }
+=======
+  "name": "grapMessage",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "request":"*",
+    "cheerio":"*"   
+  }
+}
+>>>>>>> fa4e6361ab90b338a4552e099b35bf5550a3faf7
