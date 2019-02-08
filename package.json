@@ -1,0 +1,26 @@
+{
+  "name": "news-crawler",
+  "version": "1.0.0",
+  "description": "news crawler是一个抓取百度头条文章的工具，自动分析文章内容，生成一片新的“热文”",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HXWfromDJTU/crawler.git"
+  },
+  "keywords": [
+    "crawler",
+    "headline"
+  ],
+  "author": "swain wong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HXWfromDJTU/crawler/issues"
+  },
+  "homepage": "https://github.com/HXWfromDJTU/crawler#readme",
+  "dependencies": {
+    "crawler": "^1.2.0"
+  }
+}
