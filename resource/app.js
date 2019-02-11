@@ -1,12 +1,12 @@
 var request = require('request'),
   cheerio = require('cheerio'), 
-  URL_36KR = 'http://36kr.com/';			//36ë´ 
+  URL_36KR = 'http://36kr.com/';			//36ï¿½ 
   Proxy = require('./proxylist.js'); 
-/* ¿ªÆôÊý¾Ý²É¼¯Æ÷ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²É¼ï¿½ï¿½ï¿½ */
  function dataCollectorStartup() {		 
    dataRequest(URL_36KR);
  }
-/* Êý¾ÝÇëÇó */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 function dataRequest(dataUrl)
 {
   request({
@@ -27,7 +27,7 @@ function dataRequest(dataUrl)
     }
   });	
 }
-/* 36kr Êý¾Ý½âÎö */
+/* 36kr ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ */
 function dataParse36Kr(body)
 {
   console.log('============================================================================================');
@@ -50,15 +50,15 @@ function dataParse36Kr(body)
     var urlVal = titleDom.attr('href');
     var timeVal = timeDom.text();
     var coverUrl = coverDom.attr('src');
-    //´¦ÀíÊ±¼ä
+    //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
     var timeDateSecs = new Date(timeVal).getTime() / 1000;
     if(urlVal != undefined)
     {
        console.info('--------------------------------');
-       console.info('±êÌâ£º' + titleVal);
-       console.info('µØÖ·£º' + urlVal);
-       console.info('Ê±¼ä£º' + timeDateSecs);
-       console.info('·âÃæ£º' + coverUrl);				
+       console.info('ï¿½ï¿½ï¿½â£º' + titleVal);
+       console.info('ï¿½ï¿½Ö·ï¿½ï¿½' + urlVal);
+       console.info('Ê±ï¿½ä£º' + timeDateSecs);
+       console.info('ï¿½ï¿½ï¿½æ£º' + coverUrl);				
        console.info('--------------------------------');
     }
   };
